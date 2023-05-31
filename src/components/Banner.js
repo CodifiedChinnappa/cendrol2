@@ -3,7 +3,7 @@ import Search from "./Search";
 import { data } from "../mockData/data";
 
 const Banner = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState(null);
   const [searchData, setSearchData] = useState(0);
 
   const handleTabClick = (item) => {
@@ -19,7 +19,7 @@ const Banner = () => {
           "url(https://landsandhomes.com/front/images/banner2.png)",
       }}
     >
-      <ul className="flex flex-wrap justify-center items-center my-10 gap-8">
+      <ul className="flex flex-wrap justify-center items-center my-10 p-3 gap-8">
         {data.map((item, i) => (
           <li
             key={item.title}
